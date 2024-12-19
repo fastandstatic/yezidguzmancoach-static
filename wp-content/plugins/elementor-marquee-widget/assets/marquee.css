@@ -1,0 +1,60 @@
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee-item {
+    margin: 0;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.marquee-separator {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: inherit;
+    color: inherit;
+    vertical-align: middle;
+}
+
+.marquee-separator img.separator-image {
+    max-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.marquee-scroll-left {
+    animation: marquee-scroll-left 15s linear infinite;
+}
+
+.marquee-scroll-right {
+    animation: marquee-scroll-right 15s linear infinite;
+}
+
+@keyframes marquee-scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-scroll-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
